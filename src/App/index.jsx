@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { AppContainer } from "./styles";
 
 import Header from "../Components/Header";
-<<<<<<< HEAD
 
 import Home from "../Page/Home";
 import Login from "../Page/Login";
@@ -19,18 +18,11 @@ import ScheduleCompany from "../Page/ScheduleCompany";
 import CommitmentCompany from "../Page/CommitmentCompany";
 
 import { EntityProvider } from "../Context/Entity/EntityContext";
-=======
-import Sidebar from "../Components/Sidebar";
-
-import Home from "../Page/Home";
-import Login from "../Page/Login";
->>>>>>> 6eae61b608659a718ffe202fd987891a53699eec
 
 const App = () => {
   return (
     <AppContainer>
       <BrowserRouter>
-<<<<<<< HEAD
         <EntityProvider>
           <Header />
           <Routes>
@@ -51,14 +43,6 @@ const App = () => {
             <Route path="/commitment-company" element={<CommitmentCompany />} />
           </Routes>
         </EntityProvider>
-=======
-        <Header />
-        <Sidebar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="login" element={<Login />} />
-        </Routes>
->>>>>>> 6eae61b608659a718ffe202fd987891a53699eec
       </BrowserRouter>
     </AppContainer>
   );

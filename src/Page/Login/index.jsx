@@ -8,22 +8,17 @@ import useError from "../../Context/Error/useError";
 import useEntity from "../../Context/Entity/useEntity";
 
 import useForm from "../../Hook/useForm";
-import useUser from "../../Context/User/useUser"
 
 import Input from "../../Components/Input";
 import Button from "../../Components/Button";
 
-<<<<<<< HEAD
 import { EntityLogin } from "../../Fetch/Entity/Login";
 
-=======
->>>>>>> 6eae61b608659a718ffe202fd987891a53699eec
 function Login() {
   const navigate = useNavigate();
 
   const { language } = useLanguage();
 
-<<<<<<< HEAD
   const { error, setError } = useError();
   const { loading, setLoading } = useLoading();
 
@@ -54,15 +49,6 @@ function Login() {
 
   return (
     <LoginContainer action="submit" onSubmit={handleSubmit}>
-=======
-  const email = useForm("email");
-  const password = useForm();
-
-  const { error, loading } = useUser();
-
-  return (
-    <LoginContainer action="" onSubmit={() => {}}>
->>>>>>> 6eae61b608659a718ffe202fd987891a53699eec
       <Input
         required
         type="email"
